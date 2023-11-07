@@ -1,0 +1,156 @@
+body {
+    background-color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+}
+
+.link{
+    color: #0000ff;
+}
+
+a:visited{
+    color: purple;
+}
+
+p {
+    text-align: left;
+    color: #404040;
+    font-family: sans-serif;
+    font-size:medium;
+    font-weight: bold;
+    line-height: 150%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.contact-gallery{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+
+.gallery {
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.img-cont {
+    border: 0px ;
+    padding: 0px;
+    display: inline-block;
+    width: 250px;
+    height: 250px ;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.img-cont > a {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    margin: 0px;
+}
+
+
+.small{
+    border:0px;
+    padding: 0px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin:15px;
+}
+
+.small > a {
+    width: inheret;
+    height: inherit;
+    object-fit: cover;
+    margin: 25px;
+}
+
+
+a > img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    margin: inherit;
+}
+
+img {
+    z-index: 1;
+}
+
+.row{
+    display: block;
+    width: 100%;
+}
+
+#header{
+    background: #FAFAFA;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#dropdown-menu{
+    cursor: pointer;
+    display: inline-block;
+    height: 45px;
+    line-height: 50px;
+    width: 120px;
+    vertical-align: middle;
+    color: #262626;
+    background: #FAFAFA;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.dropdown-content{
+    cursor: pointer;
+    display: none;
+    background: #fafafa;
+    position: relative;
+    min-width: 160px;
+    z-index: 1;
+    left: 0;
+    font-weight: normal;
+    font-size: medium;
+}
+
+
+#dropdown-menu li{
+    font-family: sans-serif;
+    text-align: center;
+    list-style-type: none;
+    color: #262626;
+    font-weight: bolder;
+}
+
+#dropdown-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+#dropdown-menu:hover .dropdown-content{
+    display: block;
+}
+
+#dropdown-menu li:hover{
+    background: #F0DDDD;
+}
+

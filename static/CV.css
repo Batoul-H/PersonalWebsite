@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link{
+    color: #0000ff;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    color: #404040;
+    text-align: left;
+    overflow-wrap: normal;
+    line-height: 20pt;
+    background-color: #ffffff;
+}
+
+.row{
+    display: block;
+    width: 100%;
+}
+
+
+#header{
+    background: #FAFAFA;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#dropdown-menu{
+    cursor: pointer;
+    display: inline-block;
+    height: 45px;
+    line-height: 50px;
+    width: 120px;
+    vertical-align: middle;
+    color: #262626;
+    background: #FAFAFA;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.dropdown-content{
+    cursor: pointer;
+    display: none;
+    background: #fafafa;
+    position: relative;
+    min-width: 160px;
+    z-index: 1;
+    left: 0;
+    font-weight: normal;
+    font-size: medium;
+}
+
+
+#dropdown-menu li{
+    font-family: sans-serif;
+    text-align: center;
+    list-style-type: none;
+    color: #262626;
+    font-weight: bolder;
+}
+
+#dropdown-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+#dropdown-menu:hover .dropdown-content{
+    display: block;
+}
+
+#dropdown-menu li:hover{
+    background: #F0DDDD;
+}
+
+.left{
+    float: left;
+    width: 40%;
+    background: #F0DDDD;
+    position: absolute;
+    z-index: 0;
+}
+
+.right{
+    float: right;
+    width: 60%;
+}
+
+.profile {
+    border-radius: 10px;
+    max-width: 35%;
+    display: block;
+    position: relative;
+    left: 25%;
+    margin-top: 10%;
+    z-index: 1;
+}
+
+img {
+    margin: 5px 10px;
+}
+
+h1{
+    color: black;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40pt;
+}
+
+h2{
+    color: #262626;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    line-height: 35pt;
+}
+
+h3{
+    font-weight: bold;
+    line-height: normal;
+}
+
+
+a:visited{
+    color: purple;
+}
+
+.container{
+    padding: 20px 75px;
+    margin: 20px;
+}
+
+.subcontainer{
+    margin: 10px 20px;
+    padding: 10px 75px;
+}
+
+ul {
+    list-style-position:inside;
+}
