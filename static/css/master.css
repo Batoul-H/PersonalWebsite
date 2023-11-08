@@ -1,3 +1,4 @@
+/* clearing defaults */
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,10 @@
 
 .link{
     color: #0000ff;
+}
+
+.link:visited{
+    color: purple;
 }
 
 body{
@@ -17,6 +22,7 @@ body{
     background-color: #ffffff;
 }
 
+/*maybe combine with header id */
 .row{
     display: block;
     width: 100%;
@@ -25,26 +31,27 @@ body{
 
 #header{
     background: #FAFAFA;
-    height: 50px;
+    height: 55px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 #dropdown-menu{
     cursor: pointer;
     display: inline-block;
+    margin-top: 5px;
     height: 45px;
     line-height: 50px;
-    width: 120px;
+    letter-spacing: 0.15rem;
+    width: 160px;
     vertical-align: middle;
     color: #262626;
     background: #FAFAFA;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: x-large;
+    font-weight: normal;
+    font-size: large;
     text-align: center;
 }
 
@@ -55,19 +62,19 @@ body{
     background: #fafafa;
     position: relative;
     min-width: 160px;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     font-weight: normal;
     font-size: medium;
+    opacity: 0.85;
 }
 
 
 #dropdown-menu li{
-    font-family: sans-serif;
     text-align: center;
     list-style-type: none;
     color: #262626;
-    font-weight: bolder;
+    font-weight: normal;
 }
 
 #dropdown-menu ul{
@@ -83,39 +90,13 @@ body{
     background: #F0DDDD;
 }
 
-.left{
-    float: left;
-    width: 40%;
-    background: #F0DDDD;
-    position: absolute;
-    z-index: 0;
-}
-
-.right{
-    float: right;
-    width: 60%;
-}
-
-.profile {
-    border-radius: 10px;
-    max-width: 35%;
-    display: block;
-    position: relative;
-    left: 25%;
-    margin-top: 10%;
-    z-index: 1;
-}
-
-img {
-    margin: 5px 10px;
-}
 
 h1{
     color: black;
     letter-spacing: 0.25rem;
     text-transform: uppercase;
     text-align: center;
-    line-height: 40pt;
+    line-height: 35pt;
 }
 
 h2{
@@ -128,23 +109,45 @@ h2{
 h3{
     font-weight: bold;
     line-height: normal;
+    letter-spacing: 0.1rem;
+    line-height: 25pt;
 }
 
-
-a:visited{
-    color: purple;
+h4 {
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 0.08rem;
+    line-height: 20pt;
 }
 
-.container{
-    padding: 20px 75px;
-    margin: 20px;
+.intro{
+    display: inline-block;
+    margin-top: 125px;
 }
 
-.subcontainer{
-    margin: 10px 20px;
-    padding: 10px 75px;
+.intro-text{
+    margin-top: 0px;
+    display: inline-block;
+    width: 55%;
+    padding-left: 95px;
+    margin-right: 55px;
+    vertical-align: middle;
+    margin: auto;
+
 }
 
-ul {
-    list-style-position:inside;
+.intro-image{
+    width: 35%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 45px;
+    height: 450px;
+    margin-left: 50px;
+}
+
+.intro-image > img{
+    border-radius : 8px;
+    object-fit: cover;
+    height: inherit;
+    vertical-align: middle;
 }
