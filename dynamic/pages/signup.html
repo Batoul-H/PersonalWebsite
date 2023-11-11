@@ -41,8 +41,7 @@
                     <div class="input-cont">
                         <i class="fa fa-lock" aria-hidden="true" style=" float: left;"></i>
                         <input id="ps" type="password" name="password" placeholder="Password" class="input-txt"> 
-                        <i class="fa fa-eye" aria-hidden="true" style=" float: right;"></i>
-                        <i class="fa fa-eye-slash" aria-hidden="true" style=" float: right;"></i>
+                        <i id="togglePassword" class="fa fa-eye-slash" aria-hidden="true" style=" float: right; cursor: pointer;"></i>
                     </div>
                     <br>
                      
@@ -52,8 +51,7 @@
                     <div class="input-cont" style="margin-bottom: 0; padding-bottom: 0;">
                         <i class="fa fa-lock" aria-hidden="true" style=" float: left;"></i>
                         <input id="cps" type="password" name="cpassword" placeholder="Password" class="input-txt"> 
-                        <i class="fa fa-eye" aria-hidden="true" style=" float: right;"></i>
-                        <i class="fa fa-eye-slash" aria-hidden="true" style=" float: right;"></i>
+                        <i id="togglecPassword" class="fa fa-eye-slash" aria-hidden="true" style=" float: right; cursor: pointer;"></i>
                     </div>
                     <br>
                     
@@ -179,6 +177,27 @@
                     }
 
                 }
+
+                //adding the event listener to toggle the eye
+                togglePassword.addEventListener("click", function () {
+                        // toggle the type attribute
+                        const type = ps.getAttribute("type") === "password" ? "text" : "password";
+                        ps.setAttribute("type", type);
+                        
+                        // toggle the icon
+                        this.classList.toggle("fa-eye");
+                        this.classList.toggle("fa-eye-slash");
+                });
+
+                togglecPassword.addEventListener("click", function () {
+                        // toggle the type attribute
+                        const type = cps.getAttribute("type") === "password" ? "text" : "password";
+                        cps.setAttribute("type", type);
+                        
+                        // toggle the icon
+                        this.classList.toggle("fa-eye");
+                        this.classList.toggle("fa-eye-slash");
+                });
 
                 /*
                 console.log("fn:"+fn);

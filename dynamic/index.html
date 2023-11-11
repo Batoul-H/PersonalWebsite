@@ -31,8 +31,7 @@
                             <div class="input-cont">
                                 <i class="fa fa-lock" aria-hidden="true" style=" float: left;"></i>
                                 <input id="ps" type="password" name="password" placeholder="Your password" class="input-txt"> 
-                                <i class="fa fa-eye" aria-hidden="true" style=" float: right;"></i>
-                                <i class="fa fa-eye-slash" aria-hidden="true" style=" float: right;"></i>
+                                <i id="togglePassword" class="fa fa-eye-slash" aria-hidden="true" style=" float: right; cursor: pointer;"></i>
                             </div>
                             <br>
                             
@@ -62,6 +61,7 @@
                     var form=document.getElementById('login-form');
                     var un = document.getElementById('un').value.trim();
                     var ps = document.getElementById('ps').value.trim();
+                    const togglePassword = document.getElementById('togglePassword');
 
                     //creating the error message
                     var error = '';
@@ -82,7 +82,20 @@
                         form.submit();
                     }
 
+                    
                 }
+                
+                //adding the event listener to toggle the eye
+                togglePassword.addEventListener("click", function () {
+                    // toggle the type attribute
+                    const type = ps.getAttribute("type") === "password" ? "text" : "password";
+                    ps.setAttribute("type", type);
+                        
+                    // toggle the icon
+                    this.classList.toggle("fa-eye");
+                    this.classList.toggle("fa-eye-slash");
+                });
+                    
         </script>
 
 
