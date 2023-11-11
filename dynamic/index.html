@@ -16,7 +16,7 @@
                     <h2>Login to your account</h2>
 
                     <div>  
-                        <form>
+                        <form id="login-form" name="login-form" method="post" action="./backend/login.php">
 
                             <label for="un">Username</label>
                             <br>
@@ -55,6 +55,37 @@
 
 
         </div>
+
+        <script>
+                function login(){
+                    //to get the input
+                    var form=document.getElementById('login-form');
+                    var un = document.getElementById('un').value.trim();
+                    var ps = document.getElementById('ps').value.trim();
+
+                    //creating the error message
+                    var error = '';
+
+                    //checking if required fields are empty
+                    if (un === '' ){
+                        error += 'Username is required\n';
+                    }
+                    if(ps ==='' ){
+                        error += 'Password is required\n';
+                    }
+
+                    //printing the error
+                    if(error != ''){
+                        alert(error);
+                    }
+                    else{
+                        form.submit();
+                    }
+
+                }
+        </script>
+
+
     </body>
 
 </html>
