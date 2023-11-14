@@ -39,7 +39,7 @@
             echo "User already exists, login if you have an account or use another username and email"; 
             
             // Use JavaScript to redirect after the content has been sent
-            echo '<script>window.location.href = "../index.html";</script>';
+            echo '<script>window.location.href = "../index.php";</script>';
             exit;
             
         }
@@ -50,7 +50,7 @@
     // Save updated users to JSON file
     file_put_contents($usersFile, json_encode($users));
     // Redirect to a success page or perform other actions
-    header("Location: ../index.html");
+    header("Location: ../index.php");
     exit(); // Ensure that no further code is executed after the redirect
 
 

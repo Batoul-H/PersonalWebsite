@@ -168,6 +168,25 @@
                         error += 'The email is invalid\n';
                     }
 
+                    //checking if the password is strong
+                    if(ps.length<8){
+                        error += 'The password is too short, it must be a min of 8 char\n';
+                    }
+
+                    if(ps.length>12){
+                        error+= 'The password is too long, it must be a max of 12 char\n';
+                    }
+
+                    if (!ps.match(/[a-z]+/)){
+                        error+= 'The password must have at least one lowercase character\n';
+                    }
+                    if (!ps.match(/[A-Z]+/)){
+                        error+= 'The password must have at least one uppercase character\n';
+                    }
+                    if ( (!ps.match(/[0-9]+/)) && (!ps.match(/[$@#&!]+/) ) ) {
+                        error+= 'The password must have at least one number or special character\n';
+                    }
+
                     //printing the error
                     if(error != ''){
                         alert(error);
