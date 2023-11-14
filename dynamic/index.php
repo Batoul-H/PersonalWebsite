@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    session_unset();
+    session_destroy();
+?>
+
 <html>
     <head>
         <link href="./images/title-dark.png" rel="icon" >

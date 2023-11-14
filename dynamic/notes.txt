@@ -12,3 +12,6 @@ II- The gallery has to be dynamic. There should be a gallery file (txt, csv or j
 
 III- On every page of the app, there should be a welcome msg on the top right with the name of the user and a logout button.
      The pages should not be accessible except when a successful login is made
+
+
+     try and do something to manage the "password in a data leak"

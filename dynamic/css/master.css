@@ -39,6 +39,47 @@ body{
     z-index: 2;
 }
 
+.welcome-msg{
+    display: inline-block;
+    margin-top: 5px;
+    height: 45px;
+    width: auto;
+    line-height: 50px;
+    letter-spacing: 0.15rem;
+    text-align: left;
+    vertical-align: middle;
+    color: #262626;
+    background: #FAFAFA;
+    font-weight: normal;
+    font-size: large;
+    text-align: center;
+    padding: 0px 25px;
+}
+
+.welcome-text {
+    float: left;
+    text-align: left;
+    padding: 0px 15px;
+    width: auto;
+}
+
+.welcome-button {
+    display: inline-block;
+    margin: 5px auto;
+    vertical-align: middle;
+    padding: 2px 15px;
+    border-radius: 8px;
+    height: 35px;
+    font-weight: bold;
+    letter-spacing: 0.08rem;
+    line-height: 25pt;
+    background: #F8ECE0 ;
+    color: #262626;
+    border:1px solid #F8ECE0;
+    cursor: pointer;
+    text-align: center;
+}
+
 #dropdown-menu{
     cursor: pointer;
     display: inline-block;
@@ -53,6 +94,7 @@ body{
     font-weight: normal;
     font-size: large;
     text-align: center;
+    margin-right: 100px;
 }
 
 

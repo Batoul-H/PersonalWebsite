@@ -1,10 +1,19 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["username"])){
+        header("location:../index.php");
+    }
+?>
+
 <html>
     <head>
+        <meta charset="UTF-8">
         <link href="../images/title-dark.png" rel="icon"  >
         <title>Batoul Hariri</title>
         <link href="../css/icon.css" rel="stylesheet">
         <link href="../css/master.css" rel="stylesheet">
         <link href="../css/contact.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     </head>
 
     <body>
@@ -13,21 +22,36 @@
                 <span><i class="icon menu-icon"></i>Menu</span>
                 <div class="dropdown-content">
                     <ul>
-                        <a href="./main.html"> 
+                        <a href="./main.php"> 
                             <li>Main</li>
                         </a>
-                        <a href="./cv.html">
+                        <a href="./cv.php">
                             <li>CV</li>   
                         </a>
-                        <a href="./gallery.html">
+                        <a href="./gallery.php">
                             <li>Gallery</li>   
                         </a>
-                        <a href="./contact.html">
+                        <a href="./contact.php">
                             <li>Contact</li>
                         </a>
                     </ul>
                 </div>
             </div>
+
+            <div class="welcome-msg" style="float: right;">
+                <div class="welcome-text" style="display: inline-block;"> 
+                    <?php
+                        echo '<p>';
+                        echo "Welcome, ";
+                        echo $_SESSION["username"];
+                        echo '</p>';
+                    ?>
+                </div>
+                <button class="welcome-button" style="display: inline-block;" id="button" onclick="logout()">
+                    <i class="fa fa-power-off"></i> 
+                </button>
+            </div>
+
         </div>
         
         <div class="contact-img">
@@ -57,6 +81,12 @@
             </div>
 
         </div>
+
+        <script>
+            function logout () {
+                location.href = "../index.php";
+            }
+        </script>
 
     </body>
 

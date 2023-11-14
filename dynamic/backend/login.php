@@ -25,7 +25,9 @@
 
     if ($loggedIn) {
         // Redirect to a main
-        header('Location: ../pages/main.html');
+        session_start();
+        $_SESSION["username"]=ucfirst($un);
+        header('Location: ../pages/main.php');
         exit;
     } else {
         // Redirect to a login failure page or perform other actions
