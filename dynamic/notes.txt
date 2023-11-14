@@ -1,0 +1,17 @@
+Dynamic and security features :
+
+I- In order to access your website, the user has to signup and then login.
+   - When a user signs up they should add the username, full name, password, sex and date of birth.
+   - The data has to be saved in either a JSON file, a CSV file or a text file.
+   - When a user tries to login in, the app should load the users file and search it for a match.
+
+II- The gallery has to be dynamic. There should be a gallery file (txt, csv or json) containing a list of image names.
+    - Each image that you wish to add to the gallery should be saved in the gallery folder and its name should be written
+     to the gallery file.
+    - The gallery should be loaded dynamically from the gallery file.
+
+III- On every page of the app, there should be a welcome msg on the top right with the name of the user and a logout button.
+     The pages should not be accessible except when a successful login is made
+
+
+     try and do something to manage the "password in a data leak"

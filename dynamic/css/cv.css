@@ -1,0 +1,62 @@
+
+.left{
+    float:left;
+    width: 60%;
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+}
+
+.right{
+    float:right;
+    width: 40%;
+    background: #F0DDDD;
+    margin-top: 50px;
+    position: scrollable;
+}
+
+
+.profile {
+    margin:auto;
+    border-radius: 10px;
+    max-width: 35%;
+    display: block;
+    position: relative;
+    margin-top: 10%;
+    z-index: 1;
+}
+
+td > img {
+    margin: 5px 10px 5px 0px;
+}
+
+.container{
+    padding: 20px 75px;
+    margin: 20px;
+}
+
+.subcontainer{
+    margin: 10px 20px;
+    padding: 20px 75px;
+}
+
+.subtitle {
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    line-height: 35pt;
+}
+
+#table-row{
+    line-height: 45px;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+#contact {
+    padding-top:5px; 
+    padding-bottom:70px; 
+    margin-top:0px; 
+    margin-bottom:20px;
+}
