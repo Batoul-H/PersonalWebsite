@@ -34,7 +34,7 @@
         echo ("Login failed. Please try again or signup if you do not have an account.");
             
         // Use JavaScript to redirect after the content has been sent
-        echo '<script>window.location.href = "../index.html";</script>';
+        echo '<script>window.location.href = "../index.php";</script>';
         exit;
     }
     
